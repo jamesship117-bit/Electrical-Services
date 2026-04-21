@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bright Solutions Electrical Services</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #f59e0b;
+      --accent-dark: #d97706;
+      --border: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #0b1220 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero,
+    .section {
+      background: rgba(17, 24, 39, 0.95);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .pill {
+      background: #1f2937;
+      border: 1px solid #374151;
+      color: #f3f4f6;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    .contact {
+      font-size: 1.05rem;
+    }
+
+    .contact strong {
+      color: var(--accent);
+    }
+
+    .mock-note {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0;
+    }
+
+    .appointment-form {
+      display: grid;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.92rem;
+      margin-bottom: 4px;
+      color: #d1d5db;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      background: #0b1220;
+      color: var(--text);
+      border: 1px solid #374151;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.95rem;
+    }
+
+    textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    button {
+      background: var(--accent);
+      color: #111827;
+      border: none;
+      border-radius: 8px;
+      padding: 11px 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: var(--accent-dark);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Bright Solutions Electrical Services</h1>
+      <p class="subtitle">Professional, efficient, and family owned electrical service you can trust.</p>
+      <div class="pill-row">
+        <span class="pill">Professional</span>
+        <span class="pill">Efficient</span>
+        <span class="pill">Family Owned</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Business Hours</h2>
+      <ul>
+        <li>Monday: 8AM - 6PM</li>
+        <li>Tuesday: 8AM - 6PM</li>
+        <li>Wednesday: 8AM - 6PM</li>
+        <li>Thursday: 8AM - 6PM</li>
+        <li>Friday: 8AM - 6PM</li>
+        <li>Saturday: 8AM - 12PM</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Contact Information</h2>
+      <p class="contact">Call us today: <strong>832-758-4456</strong></p>
+    </section>
+
+    <section class="section">
+      <h2>Set an Appointment</h2>
+      <p class="mock-note">Mockup only: this form does not submit yet.</p>
+
+      <form class="appointment-form" action="#" method="post" onsubmit="return false;">
+        <div>
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" />
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="(000) 000-0000" />
+        </div>
+        <div>
+          <label for="day">Preferred Day</label>
+          <select id="day" name="day">
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+          </select>
+        </div>
+        <div>
+          <label for="details">Service Details</label>
+          <textarea id="details" name="details" placeholder="Tell us what you need help with"></textarea>
+        </div>
+        <button type="submit">Request Appointment</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
