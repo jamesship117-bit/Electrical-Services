@@ -1,0 +1,21 @@
+---
+description: Commit and push to origin main after site changes so Vercel deploys without a separate manual push step.
+globs:
+  - electrical-services-app/**
+  - index.html
+---
+
+# Deploy workflow (Vercel)
+
+This repo deploys to Vercel from GitHub. The Next.js app root is **`electrical-services-app/`** (set that as **Root Directory** in the Vercel project).
+
+When you finish implementing a user-requested change that touches **`electrical-services-app/`** or root **`index.html`**:
+
+1. Run `git status` and confirm the intended files changed.
+2. `git add -A` for those changes (do not commit secrets or `.env*` files).
+3. `git commit -m "<clear message>"` with a concise, accurate message.
+4. `git push origin main` so Vercel picks up the commit.
+
+Skip push only if the user explicitly asks not to push, or if there is nothing to commit.
+
+If push fails (auth, conflicts), explain the error and the smallest next step for the user.
