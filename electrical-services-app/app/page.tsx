@@ -48,6 +48,15 @@ export default function Home() {
             Call us today:{" "}
             <span className="font-semibold text-amber-400">832-758-4456</span>
           </p>
+          <p className="mt-2 text-lg">
+            Email us:{" "}
+            <a
+              href="mailto:brightsol.electrical@gmail.com"
+              className="font-semibold text-amber-300 underline decoration-amber-300/70 underline-offset-4 hover:text-amber-200"
+            >
+              brightsol.electrical@gmail.com
+            </a>
+          </p>
         </section>
 
         <section className="rounded-xl border border-slate-200/90 bg-white/90 p-6 text-slate-900 shadow-lg backdrop-blur-sm md:p-8">

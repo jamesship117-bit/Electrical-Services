@@ -12,58 +12,24 @@ export function SiteLogo() {
         aria-hidden
       >
         <svg
-          viewBox="0 0 40 52"
+          viewBox="0 0 48 48"
           className="h-7 w-7 text-amber-400 md:h-8 md:w-8"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M20 6c-7.18 0-13 5.82-13 13 0 4.2 1.98 7.94 5.06 10.34.35.27.56.69.56 1.14V32c0 .83.67 1.5 1.5 1.5h12.88c.83 0 1.5-.67 1.5-1.5v-1.52c0-.45.21-.87.56-1.14C32.02 26.94 34 23.2 34 19c0-7.18-5.82-13-13-13Z"
+            d="M24 4.5c10.77 0 19.5 8.73 19.5 19.5S34.77 43.5 24 43.5 4.5 34.77 4.5 24 13.23 4.5 24 4.5Z"
             fill="currentColor"
-            fillOpacity="0.12"
+            fillOpacity="0.16"
             stroke="currentColor"
-            strokeWidth="1.35"
+            strokeWidth="2"
+          />
+          <path
+            d="M27.5 11.5 17.4 25.2h8l-4.1 11.3 13-17.6h-8.4l1.6-7.4Z"
+            fill="currentColor"
+            stroke="currentColor"
+            strokeWidth="1.1"
             strokeLinejoin="round"
-          />
-          <path
-            d="M20 14v8M16.5 18h7"
-            stroke="currentColor"
-            strokeWidth="1.35"
-            strokeLinecap="round"
-          />
-          <path
-            d="M14 34.5h12"
-            stroke="currentColor"
-            strokeWidth="1.35"
-            strokeLinecap="round"
-            opacity="0.85"
-          />
-          <rect
-            x="13"
-            y="37"
-            width="14"
-            height="3.5"
-            rx="1"
-            fill="currentColor"
-            opacity="0.75"
-          />
-          <rect
-            x="14"
-            y="41.5"
-            width="12"
-            height="3.5"
-            rx="1"
-            fill="currentColor"
-            opacity="0.55"
-          />
-          <rect
-            x="15"
-            y="46"
-            width="10"
-            height="3.5"
-            rx="1"
-            fill="currentColor"
-            opacity="0.4"
           />
         </svg>
       </span>
