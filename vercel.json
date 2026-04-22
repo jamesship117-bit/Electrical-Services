@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd electrical-services-app && npm install",
+  "buildCommand": "cd electrical-services-app && npm run build",
+  "devCommand": "cd electrical-services-app && npm run dev"
+}
