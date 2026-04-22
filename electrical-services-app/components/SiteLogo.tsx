@@ -8,12 +8,12 @@ export function SiteLogo() {
       aria-label="Bright Solutions Electrical Services home"
     >
       <span
-        className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-400/15 ring-1 ring-amber-400/35 md:h-12 md:w-12"
+        className="relative flex h-12 w-12 shrink-0 items-center justify-center md:h-14 md:w-14"
         aria-hidden
       >
         <svg
           viewBox="0 0 48 48"
-          className="h-7 w-7 text-amber-400 md:h-8 md:w-8"
+          className="h-10 w-10 text-amber-400 md:h-12 md:w-12"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
