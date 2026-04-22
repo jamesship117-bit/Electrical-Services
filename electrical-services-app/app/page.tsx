@@ -14,8 +14,7 @@ export default function Home() {
             Bright Solutions Electrical Services
           </h1>
           <p className="mt-3 text-slate-300">
-            Professional, efficient, and family owned electrical service you can
-            trust.
+            We provide a bright solution for any of your electrical needs.
           </p>
           <div className="mt-5 flex flex-wrap gap-2">
             <span className="rounded-full border border-slate-700 bg-slate-800 px-3 py-1 text-sm">
@@ -23,9 +22,6 @@ export default function Home() {
             </span>
             <span className="rounded-full border border-slate-700 bg-slate-800 px-3 py-1 text-sm">
               Efficient
-            </span>
-            <span className="rounded-full border border-slate-700 bg-slate-800 px-3 py-1 text-sm">
-              Family Owned
             </span>
           </div>
         </section>
