@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f8f8;
+  --foreground: #1a1a1a;
 }
 
 @theme inline {
@@ -20,22 +20,47 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-/* Full-page vertical gradient (plain CSS so it always applies; cards use transparency to show it) */
-.page-gradient {
-  min-height: 100vh;
-  background: linear-gradient(
-    180deg,
-    #0f172a 0%,
-    #1e3a5f 18%,
-    #334155 36%,
-    #64748b 55%,
-    #cbd5e1 75%,
-    #f8fafc 92%,
-    #ffffff 100%
-  );
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+button,
+.card-lift {
+  transition: all 200ms ease;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.animate-in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+.circuit-pattern {
+  position: relative;
+  overflow: hidden;
+}
+
+.circuit-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 12% 22%, rgba(245, 166, 35, 0.2) 0 2px, transparent 3px),
+    radial-gradient(circle at 82% 32%, rgba(245, 166, 35, 0.18) 0 2px, transparent 3px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: auto, auto, 60px 60px, 60px 60px;
+  opacity: 0.35;
+  pointer-events: none;
 }
